@@ -31,7 +31,6 @@ Terminal command to run this file from the root project folder:
 
     uv run python -m streaming.kafka_consumer_hajiyev
 
-    
 OBS:
   Don't edit this file - it should remain a working example.
   Copy it, rename it consumer_yourname.py, and modify your copy.
@@ -367,7 +366,7 @@ def consume_messages(
 def save_artifacts() -> None:
     """Save output artifacts or note their location."""
     LOG.info("Saving artifacts...")
-    log_path(LOG, "WROTE OUTPUT_CSV", OUTPUT_CSV)
+    log_path(LOG, "WROTE OUTPUT_JSONL", OUTPUT_JSONL)
     log_path(LOG, "WROTE OUTPUT_DB", OUTPUT_DB)
 
 
